@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Refer doctors</title>
+  <head>
+<link href="http://fonts.googleapis.com/css?family=BenchNine:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "BenchNine", sans-serif;
+    font-size: 50px;
+  color: #1E8CAA;
+}
+.center-on-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #F2F3F4;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: black;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: black;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #3a9ecb;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+button{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3a9ecb;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<center>
+	<form method="POST" action="alldoctors.php">
+<h1>Select the type of specialist you wish to search</h1><br>
+<div class="select">
+<select name="doctype">
+<option value="General physician">General physician</option>
+<option value="Internist">Internist</option>
+<option value="General surgeon">General surgeon</option>
+<option value="Cardiologist">Cardiologist</option>
+<option value="Gastroenterologist">Gastroenterologist</option>
+<option value="Pediatrician">Pediatrician</option>
+<option value="Oncologist">Oncologist</option>
+<option value="Psychiatrist">Psychiatrist</option>
+<option value="Psychologist">Psychologist</option>
+<option value="Allergist">Allergist</option>
+<option value="Neurologist">Neurologist</option>
+<option value="Pulmonologist">Pulmonologist</option>
+<option value="Nephrologist">Nephrologist</option>
+<option value="Dietitian">Dietitian</option>
+<option value="Endocrinologist">Endocrinologist</option>
+<option value="Physiotherapist">Physiotherapist</option>
+<option value="Urologist">Urologist</option>
+<option value="Hematologist">Hematologist</option>
+<option value="Immunologist">Immunologist</option>
+<option value="Rheumatologist">Rheumatologist</option>
+<option value="Opthalmologist">Opthalmologist</option>
+<option value="Gynecologist">Gynecologist</option>
+<option value="Dermatologist">Dermatologist</option>
+<option value="Neurosurgeon">Neurosurgeon</option>
+<option value="Dentist">Dentist</option>
+<option value="Bariatric Surgeon">Bariatric Surgeon</option>
+<option value="Orthopedist">Orthopedist</option>
+<option value="Pediatric Neurologist">Pediatric Neurologist</option>
+<option value="ENT specialist">ENT specialist</option>
+</select>
+</div>
+<br>
+<br>
+<button type="submit">Search doctors</button>
+</form>
+</center>
+</body>
+</html>
+
+
